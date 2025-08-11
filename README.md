@@ -15,7 +15,7 @@ Mon objectif : proposer des expériences utilisateur fluides et ergonomiques, to
 
 ## 🚀 Projets
 
-- [Projet 1 — Kaza](https://josef1923.github.io/Kaza-P11/)  
+- [Projet 1 — Kaza](https://github.com/Josef1923/Kaza-P11)  
   **Kaza** est une application web de location immobilière développée en React dans le cadre du projet OpenClassrooms.  
   L’objectif était de reproduire une plateforme type Airbnb avec une navigation fluide en Single Page Application (SPA).  
   **Fonctionnalités principales** :
