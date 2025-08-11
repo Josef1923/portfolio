@@ -10,7 +10,7 @@ function Header() {
       <div className="hdr__inner">
         <a className="hdr__logo" href="/" title="Retour à l'accueil">
           <img src={cat} alt="Logo Josef Scherer" className="hdr__img" />
-          JOSEF DEV JUNIOR
+          JOSEF - DEV JUNIOR
         </a>
 
         <button

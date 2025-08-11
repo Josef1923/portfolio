@@ -1,0 +1,15 @@
+.ftr {
+  background: var(--bg, #0b0b0e);
+  color: var(--fg, #e7e7ea);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ftr .heart {
+  color: red;
+  display: inline-block;
+  transform: scale(1);
+  animation: pulse 1.2s infinite;
+}
