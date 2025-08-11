@@ -1,15 +1,17 @@
-import logo from './logo1.svg';
+import logo from './assets/logo1.svg';
 import './App.css';
+import Header from './components/header/header.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          JOSEF SCHERER
-        </p>
-      </header>
+      <Header className="App-header">
+      </Header>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        JOSEF SCHERER (start building 11/08/2025)
+      </p>
+
     </div>
   );
 }
