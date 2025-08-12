@@ -45,12 +45,12 @@ export default function About() {
           <p className="abt__lead">
             Ancien skiman, comptable et désormais diplômé d'OpenClassrooms, j'ai
             décidé de faire un métier qui me plaît vraiment : le développement
-            web. Développeur front-end junior, je n'ai peut-être pas encore
-            d'expérience en entreprise, mais je compense par une grande capacité
-            d'adaptation, une envie d'apprendre chaque jour et l'habitude de me
-            dépasser dans des environnements très différents. Mon objectif :
-            rejoindre une équipe bienveillante, contribuer rapidement et
-            progresser aux côtés de développeurs expérimentés.
+            web. En tant que développeur front-end junior, je n'ai peut-être pas
+            encore d'expérience en entreprise, mais je compense par une grande
+            capacité d'adaptation, une envie d'apprendre chaque jour et
+            l'habitude de me dépasser dans des environnements très différents.
+            Mon objectif : rejoindre une équipe bienveillante, contribuer
+            rapidement et progresser aux côtés de développeurs expérimentés.
           </p>
 
           <div className="abt__cta">
