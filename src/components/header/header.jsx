@@ -1,19 +1,26 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import cat from "../../assets/cat.svg";
 import github from "../../assets/github.svg";
 import "./header.css";
 
 function Header() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("about");
+
+  const closeMenu = () => setOpen(false);
 
   return (
     <header className="hdr">
       <div className="hdr__inner">
-        <a className="hdr__title" href="/" title="Retour à l'accueil">
+        <Link
+          className="hdr__title"
+          to="/"
+          title="Retour à l'accueil"
+          onClick={closeMenu}
+        >
           <img src={cat} alt="Logo Josef Scherer" className="hdr__cat" />
           JOSEF - DEV JUNIOR
-        </a>
+        </Link>
 
         <button
           className="hdr__burger"
@@ -27,26 +34,29 @@ function Header() {
         </button>
 
         <nav className={`hdr__nav ${open ? "is-open" : ""}`}>
-          <a
-            href="#about"
-            className={active === "about" ? "active" : ""}
-            onClick={() => setActive("about")}
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={closeMenu}
           >
             À propos
-          </a>
-          <a
-            href="#work"
-            className={active === "work" ? "active" : ""}
-            onClick={() => setActive("work")}
+          </NavLink>
+
+          <NavLink
+            to="/work"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={closeMenu}
           >
             Projets
-          </a>
+          </NavLink>
+
           <a
             href="https://github.com/Josef1923"
             target="_blank"
             rel="noreferrer"
             className="hdr__github"
             title="Voir mon GitHub"
+            onClick={closeMenu}
           >
             <img src={github} alt="GitHub" />
           </a>
