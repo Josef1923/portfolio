@@ -39,7 +39,7 @@ export default function About() {
         <div className="abt__text">
           <p className="abt__kicker">À propos</p>
           <h1 className="abt__title">
-            Salut, moi c'est <span className="grad">Josef</span>
+            Bienvenue, moi c'est <span className="grad">Josef</span>
           </h1>
 
           <p className="abt__lead">
