@@ -1,12 +1,13 @@
 :root {
   --bg: #0b0b0e;
-  --fg: #e7e7ea;
+  --fg: #ffffff;
   --muted: #9aa0a6;
   --brand: #7c3aed;
 }
 
 .hdr {
   background: rgba(11, 11, 14, 0.7);
+  z-index: 10;
 }
 
 .hdr__inner {
@@ -24,7 +25,7 @@
   gap: 18px;
   font-weight: 700;
   text-decoration: none;
-  color: var(--fg);
+  color: white;
 }
 
 .hdr__img {

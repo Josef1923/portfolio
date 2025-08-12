@@ -5,25 +5,19 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background: url("./assets/bg.jpg");
+  background-size: cover;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .App-logo {
   height: 400px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 main {
