@@ -10,7 +10,7 @@ export default function About() {
       <div className="abt__container">
         <div className="abt__media">
           <div className="abt__avatar">
-            <img src={profil} alt="Portrait de Ton Nom" />
+            <img src={profil} alt="Portrait" />
             <span className="abt__ring" />
           </div>
           <ul className="abt__stats">
@@ -39,7 +39,7 @@ export default function About() {
         <div className="abt__text">
           <p className="abt__kicker">À propos</p>
           <h1 className="abt__title">
-            Hello, moi c'est <span className="grad">Josef</span>
+            Salut, moi c'est <span className="grad">Josef</span>
           </h1>
 
           <p className="abt__lead">
@@ -55,15 +55,7 @@ export default function About() {
 
           <div className="abt__cta">
             <a href={cv} className="btn btn--brand" download>
-              📄 Télécharger mon CV
-            </a>
-            <a
-              className="link"
-              href="https://github.com/Josef1923"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub →
+              📥 Télécharger mon CV
             </a>
           </div>
         </div>
