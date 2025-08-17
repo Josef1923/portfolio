@@ -1,7 +1,42 @@
 .work {
+  position: relative;
+  padding: 72px 16px;
+  color: var(--fg);
+}
+
+.work__container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.work__head {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #f0f0f0;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.work__title {
+  font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.work__grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 680px) {
+  .work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+@media (min-width: 1120px) {
+  .work__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+  }
 }

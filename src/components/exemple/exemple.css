@@ -1,0 +1,82 @@
+.exemple {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: default;
+  min-height: 490px;
+}
+
+.exemple:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  border-color: rgba(124, 58, 237, 0.35);
+}
+
+.exemple__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.exemple__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.exemple:hover .exemple__image {
+  transform: scale(1.06);
+}
+
+.exemple__body {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exemple__title {
+  margin: 6px 0 2px;
+  font-weight: 750;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: var(--fg);
+}
+
+.exemple__description {
+  color: #d6d6dc;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0 0 2px;
+  min-height: 3.2em;
+}
+
+.exemple__links {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  gap: 10px;
+}
+.exemple__links .btn--ghost {
+  color: var(--fg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exemple__links .btn--ghost:hover {
+  background: #7c3aed;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+}
+
+@media (max-width: 679px) {
+  .exemple__body {
+    padding: 12px;
+  }
+  .exemple__title {
+    font-size: 1rem;
+  }
+}

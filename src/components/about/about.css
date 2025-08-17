@@ -69,6 +69,7 @@
 .abt__text {
   max-width: 620px;
   margin-inline: auto;
+  cursor: default;
 }
 @media (min-width: 860px) {
   .abt__text {
